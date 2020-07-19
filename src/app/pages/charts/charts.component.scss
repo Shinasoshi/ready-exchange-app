@@ -1,0 +1,13 @@
+.charts {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__container {
+    margin: auto;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+}
