@@ -8,6 +8,7 @@ import { MainComponent } from './pages/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     BrowserAnimationsModule,
     HttpClientModule,
     MatCarouselModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+<div class="charts">
+  <h1>Historical rates for EUR -> PLN</h1>
+  <div class="charts__container">
+    <ngx-charts-line-chart
+      [results]="historicalRates$ | async"
+
+      [view]="view"
+      [legend]="legend"
+      [animations]=animations
+      [xAxis]=xAxis
+      [yAxis]=yAxis
+      [showYAxisLabel]=showYAxisLabel
+      [showXAxisLabel]=showXAxisLabel
+      [xAxisLabel]=xAxisLabel
+      [yAxisLabel]=yAxisLabel
+      [timeline]=timeline
+    ></ngx-charts-line-chart>
+  </div>
+</div>
+
+

@@ -14,7 +14,7 @@ import { Subject } from 'rxjs';
 export class CarouselComponent implements OnDestroy {
   destroyed$: Subject<boolean> = new Subject<boolean>();
 
-  private slides: Slide[] = [
+  slides: Slide[] = [
     {
       base: BaseEnum.EUR,
       symbol: SymbolEnum.PLN,
@@ -42,7 +42,7 @@ export class CarouselComponent implements OnDestroy {
     this.destroyed$.complete();
   }
 
-  private updateRate(index: number) {
+  updateRate(index: number) {
     this.slides[index].rate.pipe(takeUntil(this.destroyed$)).subscribe();
   }
 }
