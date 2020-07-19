@@ -1,0 +1,7 @@
+<div class="main">
+  <p>Current rate for EUR -> PLN</p>
+  <p *ngIf="(rateEurPln$ | async) as rate; else loading">{{rate.rates.PLN}}</p>
+  <ng-template #loading>
+    <div>Loading ...</div>
+  </ng-template>
+</div>
