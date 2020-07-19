@@ -9,7 +9,7 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  rateEurPln$ = this.apiService.getLatestRates(BaseEnum.EUR, SymbolEnum.PLN);
+  private rateEurPln$ = this.apiService.getLatestRates(BaseEnum.EUR, SymbolEnum.PLN);
 
   constructor(
     private apiService: ApiService
